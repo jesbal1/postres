@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delicias Frutales</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <img src="img 4.jpeg" alt="Lisas Frutales" class="logo">
+    <h1>Delicias Frutales</h1>
+    <p class="subtitle">"postres de fruta natural"</p>
+  </header>
+
+<div class="hero">
+  <h2>Deliciosos y frescos</h2>
+  <p class="hero-phrase">Explosión de sabores en cada bocado</p>
+</div>
+
+  <div class="products">
+    <h2 class="section-title">Nuestros Sabores</h2>
+    
+    <div class="grid">
+      <div class="card">
+        <img src="img 3.jpeg" alt="Limón">
+        <div class="card-content">
+          <h3>Postres de Limón</h3>
+          <p>Fresco y delicioso</p>
+          <p class="price">$6.000</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img 2.jpeg" alt="Mora">
+        <div class="card-content">
+          <h3>Postres de Mora</h3>
+          <p>Dulce y lleno de sabor</p>
+          <p class="price">$6.000</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img 1.jpeg" alt="Maracuyá">
+        <div class="card-content">
+          <h3>Postres de Maracuyá</h3>
+          <p>Tropical y vibrante</p>
+          <p class="price">$6.000</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact">
+    <h2>Contáctanos</h2>
+    
+    <form id="contactForm">
+      <input type="text" placeholder="Tu nombre" required>
+      <input type="email" placeholder="Tu correo" required>
+      <input type="tel" placeholder="Tu teléfono">
+      <textarea rows="4" placeholder="Tu mensaje..." required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+
+  <a href="https://wa.me/573138444641?text=Hola%20Lisas%20Frutales%2C%20quiero%20información%20sobre%20los%20pr%C3%B3steros" 
+     class="whatsapp-btn" target="_blank" title="Escríbenos por WhatsApp">
+       💬
+  </a>
+
+  <footer>
+    <p>&copy; 2026 Lisas Frutales - Bogotá</p>
+  </footer>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('¡Gracias! Tu mensaje ha sido enviado. Te responderemos pronto 🍋');
+      this.reset();
+    });
+  </script>
+</body>
+</html>
